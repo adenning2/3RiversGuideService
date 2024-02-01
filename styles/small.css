@@ -117,3 +117,12 @@ footer a, footer a:visited {
 footer a:hover {
     text-shadow:0px 0px 1px white;
 }
+
+/* BODY */
+main {
+    max-width: 80%;
+    margin: 0px auto;
+}
+img {
+    max-width: 100%;
+}
