@@ -9,10 +9,11 @@ body {
 
 header {
     position: sticky; /* Make navbar sticky */
-    top: 0; /* Stick to the top */
+    top: 52px; /* Stick to the top */
     z-index: 1000; /* Ensure it stays above other content */
     padding: 10px 20px;
     background-color: white;
+    font-family: 'Germania One', system-ui;
 }
 
 .navbar {
@@ -22,7 +23,7 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Adjust size as needed */
+    height: 33px; /* Adjust size as needed */
 }
 
 .nav-links {
@@ -59,7 +60,7 @@ header {
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 58px;
         background-color: white;
         flex-direction: column;
         align-items: center;
@@ -126,3 +127,30 @@ main {
 img {
     max-width: 100%;
 }
+
+/* Sticky Banner CSS */
+.sticky-banner {
+    position: sticky;
+    top: 0;
+    background-color: #213529; /* Example background color */
+    color: white; /* Text color */
+    padding: 1px 0;  /* Padding for spacing */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust the font size as needed */
+    height: 50px;
+    z-index: 1001;
+  }
+  
+  .sticky-banner a {
+    color: #f6ca02; /* Gold color for the phone number link */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .sticky-banner a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }
+
+  /*Compensate scroll*/
+  section {
+    scroll-margin-top: 127px; /* Adjust this value as needed */
+  }
