@@ -96,7 +96,7 @@ header {
 
 footer {
     height: 70px;
-    background-color: black;
+    background-color: #213529;
     color: white;
     display: flex;
     justify-content: center; /* Center horizontally */
