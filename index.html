@@ -9,7 +9,7 @@
   <meta name="description" content="Welcome to Bountiful Foods, your source for fresh, organic, locally grown foods in Carlsbad, California, and the coastal area from Los Angeles to San Diego. We offer a wide selection of fruits and produce sourced directly from local farmers, as well as national and international suppliers. Visit our storefront or food trucks to enjoy made-to-order fruit drinks and fruit bags. Experience the bounty of organic goodness and convenience while promoting healthy eating.">
   <link rel="icon" type="image/x-icon" href="images/3-rivers-guide-service-favicon-color.png">
   <link href="styles/normalize.css" rel="stylesheet">
-  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
@@ -64,15 +64,39 @@
     </section>
 
     <section id="gallery">
-      <h3>Gallery</h3>
-      <div class="gallery">
-        <img src="images/placeholder_boating.jpg" alt="Gallery Image 1" width="300">
-        <img src="images/placeholder_boating.jpg" alt="Gallery Image 2" width="300">
-        <img src="images/placeholder_boating.jpg" alt="Gallery Image 3" width="300">
-        <img src="images/placeholder_boating.jpg" alt="Gallery Image 4" width="300">
-        <img src="images/placeholder_boating.jpg" alt="Gallery Image 5" width="300">
-        <img src="images/placeholder_boating.jpg" alt="Gallery Image 6" width="300">
-      </div>
+      <div class="slideshow-container">
+        <h3 class="fancy_h">See Some of Our Adventures</h3>
+        <div class="mySlides fade">
+            <img src="images/ai_generations/river2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="images/ai_generations/fish1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="images/ai_generations/fishing1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="images/ai_generations/river1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="images/ai_generations/boat1.png" style="width:100%">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
     </section>
   </main>
 

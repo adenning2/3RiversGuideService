@@ -74,6 +74,13 @@ header {
         display: flex; /* Display the menu when active */
         transform: translateX(0%);
     }
+    .nav-links.nav-active a {
+        font-size: 40px;
+    }
+    .nav-links.nav-active li {
+        height: 10%;
+        margin: 5% 0;
+    }
 
     .burger {
         display: block;
@@ -154,3 +161,75 @@ img {
   section {
     scroll-margin-top: 127px; /* Adjust this value as needed */
   }
+
+/*GALLERY / SLIDESHOW */
+  /* MESSES UP MY SPACING BUT MIGHT NEED* {box-sizing: border-box;} */
+
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #f6ca02;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #f6ca02;
+}
+
+.fancy_h {
+    text-align: center; /* Centers the text */
+    color: #fff; /* Sets text color to white */
+    background-color: #213529; /* Dark green background */
+    border: 2px solid #f6ca02; /* Solid border with a golden color */
+    padding: 10px; /* Adds some space inside the border */
+    margin: 10px auto; /* Adds some space outside the border, top and bottom */
+}
