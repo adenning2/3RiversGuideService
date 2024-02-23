@@ -2,9 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    width: 100%; 
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 header {
@@ -232,4 +237,64 @@ img {
     border: 2px solid #f6ca02; /* Solid border with a golden color */
     padding: 10px; /* Adds some space inside the border */
     margin: 10px auto; /* Adds some space outside the border, top and bottom */
+}
+
+/* Style for the hero section */
+.hero {
+    width: 100vw; /* Set the width of the hero to the full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw; /* Pull the hero back to the left edge */
+    margin-right: -50vw; /* Ensure it stretches to the right edge */
+    height: 40vh; /* Adjust the height as needed */
+    background: url('../images/placeholder_fishing_comp.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha (0.5) for darker/lighter */
+    z-index: 1;
+}
+
+.hero h1 {
+    max-width: 95%;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px; /* Adjust spacing between h1 and button as needed */
+    /* Ensures the bottom of the h1 is along the center of the image */
+    position: relative;
+    z-index: 2;
+    top: -25px; /* Adjust based on your h1 size for precise positioning */
+}
+
+.hero button {
+    /* Styling for the button, adjust as needed */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: #213529;
+    cursor: pointer;
+    /* Ensures the top of the button is along the center of the image */
+    position: relative;
+    z-index: 2;
+    top: -20px; /* Adjust based on your button size for precise positioning */
+}
+
+.hero a {
+    color: #FFF;
+    text-decoration: none;
 }
