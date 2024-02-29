@@ -18,7 +18,8 @@ header {
     z-index: 1000; /* Ensure it stays above other content */
     padding: 10px 20px;
     background-color: white;
-    font-family: 'Germania One', system-ui;
+    font-weight: bold;
+    /*font-family: 'Germania One', system-ui;*/
 }
 
 .navbar {
@@ -154,7 +155,7 @@ img {
   }
   
   .sticky-banner a {
-    color: #f6ca02; /* Gold color for the phone number link */
+    color: #d6a92e; /* Gold color for the phone number link */
     text-decoration: none; /* Remove underline */
   }
   
@@ -197,7 +198,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #f6ca02;
+  color: #d6a92e;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -227,14 +228,14 @@ img {
 }
 
 .active, .dot:hover {
-  background-color: #f6ca02;
+  background-color: #d6a92e;
 }
 
 .fancy_h {
     text-align: center; /* Centers the text */
     color: #fff; /* Sets text color to white */
     background-color: #213529; /* Dark green background */
-    border: 2px solid #f6ca02; /* Solid border with a golden color */
+    border: 2px solid #d6a92e; /* Solid border with a golden color */
     padding: 10px; /* Adds some space inside the border */
     margin: 10px auto; /* Adds some space outside the border, top and bottom */
 }
@@ -297,4 +298,8 @@ img {
 .hero a {
     color: #FFF;
     text-decoration: none;
+}
+h3 {
+    color: #d6a92e;
+    font-size: 25px;
 }
