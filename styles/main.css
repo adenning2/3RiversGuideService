@@ -303,3 +303,44 @@ h3 {
     color: #d6a92e;
     font-size: 25px;
 }
+
+.about-container, .territory-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Puts a space between the image and the text */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+  }
+  
+  .about-container img {
+    flex: 1; /* Allows the image to grow and take up space */
+    max-width: 45%; /* Limits image width to 45% of the container */
+    margin-right: 20px; /* Adds some space between the image and the text */
+  }
+  
+  .about-container p {
+    flex: 2; /* Allows the text to take up double the space of the image, if necessary */
+    max-width: 50%; /* Limits text width to 50% of the container */
+  }
+  
+  .territory-container ul {
+    flex: 2; /* Allows the list to take up more space than the image, if necessary */
+    max-width: 50%; /* Limits list width to 50% of the container */
+    margin-right: 20px; /* Adds some space between the list and the image */
+  }
+  
+  .territory-container img {
+    flex: 1; /* Allows the image to grow and take up space */
+    max-width: 45%; /* Limits image width to 45% of the container */
+  }
+
+  .pricing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+    gap: 20px; /* Adjust the gap between the columns as needed */
+  }
+  
+  .pricing-column {
+    /* Style your column content as needed; for example: */
+    padding: 10px; /* Adds some padding around the content for spacing */
+  }
+  
