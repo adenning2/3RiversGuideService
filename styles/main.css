@@ -134,7 +134,7 @@ footer a:hover {
 
 /* BODY */
 main {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0px auto;
 }
 img {
@@ -302,6 +302,8 @@ img {
 h3 {
     color: #d6a92e;
     font-size: 25px;
+    margin: 0;
+    padding: 25px;
 }
 
 .about-container, .territory-container {
@@ -344,3 +346,7 @@ h3 {
     padding: 10px; /* Adds some padding around the content for spacing */
   }
   
+  #pricing, #about {
+    background-color: #213529;
+    color: #FFF;
+  }
