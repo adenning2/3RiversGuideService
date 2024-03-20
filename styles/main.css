@@ -8,7 +8,7 @@ html, body {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
     overflow-x: hidden; /* Hide horizontal overflow */
 }
 
@@ -301,7 +301,8 @@ img {
 }
 h3 {
     color: #d6a92e;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: bold;
     margin: 0;
     padding: 25px;
 }
@@ -316,12 +317,14 @@ h3 {
   .about-container img {
     flex: 1; /* Allows the image to grow and take up space */
     max-width: 45%; /* Limits image width to 45% of the container */
-    margin-right: 20px; /* Adds some space between the image and the text */
+    margin: 0px 10px 20px 10px;
   }
   
   .about-container p {
     flex: 2; /* Allows the text to take up double the space of the image, if necessary */
     max-width: 50%; /* Limits text width to 50% of the container */
+    margin: auto; /* Top and bottom margins of 16px, left and right margins of 20px */
+    padding: 20px 20px;
   }
   
   .territory-container ul {
@@ -355,3 +358,15 @@ h3 {
     max-width: 1536px;
     margin: 0 auto; /* Centers the container */
   }
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .about-container img,
+    .about-container p {
+        max-width: 95%; /* Allow image and text to take full container width on small screens */
+    }
+}
