@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    height: 33px; /* Adjust size as needed */
+    height: 36px; /* Adjust size as needed */
 }
 
 .nav-links {
@@ -38,7 +38,7 @@ header {
 
 .nav-links li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .nav-links a {
@@ -61,7 +61,7 @@ header {
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
     .nav-links {
         position: absolute;
         right: 0px;
@@ -248,8 +248,8 @@ img {
     right: 50%;
     margin-left: -50vw; /* Pull the hero back to the left edge */
     margin-right: -50vw; /* Ensure it stretches to the right edge */
-    height: 40vh; /* Adjust the height as needed */
-    background: url('../images/placeholder_fishing_comp.jpg') no-repeat center center;
+    height: 87vh; /* Adjust the height as needed */
+    background: url('../images/reel.jfif') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -273,17 +273,17 @@ img {
     max-width: 95%;
     color: #FFF;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 20px; /* Adjust spacing between h1 and button as needed */
     /* Ensures the bottom of the h1 is along the center of the image */
     position: relative;
     z-index: 2;
-    top: -25px; /* Adjust based on your h1 size for precise positioning */
+    top: -50px; /* Adjust based on your h1 size for precise positioning */
 }
 
 .hero button {
     /* Styling for the button, adjust as needed */
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     border: none;
@@ -292,7 +292,7 @@ img {
     /* Ensures the top of the button is along the center of the image */
     position: relative;
     z-index: 2;
-    top: -20px; /* Adjust based on your button size for precise positioning */
+    top: -12px; /* Adjust based on your button size for precise positioning */
 }
 
 .hero a {
@@ -349,4 +349,9 @@ h3 {
   #pricing, #about {
     background-color: #213529;
     color: #FFF;
+  }
+
+  .container {
+    max-width: 1536px;
+    margin: 0 auto; /* Centers the container */
   }
