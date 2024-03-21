@@ -317,20 +317,23 @@ h3 {
   .about-container img {
     flex: 1; /* Allows the image to grow and take up space */
     max-width: 45%; /* Limits image width to 45% of the container */
-    margin: 0px 10px 20px 10px;
+    margin: 0px 10px 30px 20px;
   }
   
   .about-container p {
     flex: 2; /* Allows the text to take up double the space of the image, if necessary */
     max-width: 50%; /* Limits text width to 50% of the container */
     margin: auto; /* Top and bottom margins of 16px, left and right margins of 20px */
-    padding: 20px 20px;
+    padding: 0px 20px 30px 20px;
+    margin: 0px;
+    font-size: clamp(16px, 1vw, 32px);
   }
   
   .territory-container ul {
     flex: 2; /* Allows the list to take up more space than the image, if necessary */
     max-width: 50%; /* Limits list width to 50% of the container */
-    margin-right: 20px; /* Adds some space between the list and the image */
+    margin: 20px; /* Adds some space between the list and the image */
+    font-size: 20px;
   }
   
   .territory-container img {
@@ -356,6 +359,7 @@ h3 {
 
   .container {
     max-width: 1536px;
+    max-width: 90%;
     margin: 0 auto; /* Centers the container */
   }
 
@@ -364,7 +368,9 @@ h3 {
     .about-container {
         flex-direction: column; /* Stack items vertically on small screens */
     }
-
+    .about-container img {
+      margin: 0px 10px 30px 10px;
+    }
     .about-container img,
     .about-container p {
         max-width: 95%; /* Allow image and text to take full container width on small screens */
