@@ -194,11 +194,11 @@ img {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #d6a92e;
+  color: #FFF;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -319,21 +319,27 @@ h3 {
     max-width: 45%; /* Limits image width to 45% of the container */
     margin: 0px 10px 30px 20px;
   }
+  .territory-container img {
+    flex: 1; /* Allows the image to grow and take up space */
+    max-width: 45%; /* Limits image width to 45% of the container */
+    margin: 0px 10px 30px 20px;
+  }
   
   .about-container p {
     flex: 2; /* Allows the text to take up double the space of the image, if necessary */
     max-width: 50%; /* Limits text width to 50% of the container */
-    margin: auto; /* Top and bottom margins of 16px, left and right margins of 20px */
     padding: 0px 20px 30px 20px;
     margin: 0px;
     font-size: clamp(16px, 1vw, 32px);
+    text-align: justify;
   }
-  
   .territory-container ul {
-    flex: 2; /* Allows the list to take up more space than the image, if necessary */
-    max-width: 50%; /* Limits list width to 50% of the container */
-    margin: 20px; /* Adds some space between the list and the image */
-    font-size: 20px;
+    flex: 2; /* Allows the text to take up double the space of the image, if necessary */
+    max-width: 50%; /* Limits text width to 50% of the container */
+    padding: 0px 20px 30px 20px;
+    margin: 20px;
+    font-size: clamp(16px, 1vw, 32px);
+    text-align: justify;
   }
   
   .territory-container img {
@@ -365,14 +371,27 @@ h3 {
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
-    .about-container {
+    .about-container, .territory-container {
         flex-direction: column; /* Stack items vertically on small screens */
     }
     .about-container img {
       margin: 0px 10px 30px 10px;
     }
+    .territory-container img {
+      margin: 0px 10px 30px 10px;
+    }
     .about-container img,
     .about-container p {
         max-width: 95%; /* Allow image and text to take full container width on small screens */
+    }
+    .territory-container img,
+    .territory-container ul {
+        max-width: 95%; /* Allow image and text to take full container width on small screens */
+    }
+    .prev, .next {
+      top: 62%;
+    }
+    .fancy_h {
+      margin: 2%;
     }
 }
